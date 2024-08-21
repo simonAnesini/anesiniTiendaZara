@@ -1,0 +1,249 @@
+@keyframes agrandar {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.05);}
+}
+@keyframes agrandar2 {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
+@keyframes agrandar3 {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.05) translateX(3%);}
+}
+@keyframes subir {
+  0% {transform: translateY(0px); transform: scale(0.5);}
+  100% {transform: translateY(-50px);}
+}
+@keyframes aside {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0%);}
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: top;
+  z-index: 1;
+  box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.6);
+}
+.playfair-display- <playfair-display-> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.Zara {
+  z-index: -1;
+  margin-left: -55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#logoZara {
+  width: 120px;
+}
+#hamburguesa {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+}
+#x {
+  width: 30px;
+  height: 30px;
+}
+#x:hover {
+  opacity: 80%;
+}
+#TextoZara {
+  margin-top: 0px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+#Bellezas {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-style: italic;
+  font-size: 30px;
+}
+aside {
+  padding-left: 20px;
+  padding-top: 90px;
+  margin-top: -70px;
+  background-color: black;
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+aside:target {
+  animation-name: aside;
+  animation-duration: 0.1s;
+  transform: translateX(0%);
+  box-shadow: 10px 0px 25px -5px rgba(0,0,0,1);
+}
+hr {
+  margin-bottom: 15px;
+  background-color: white;
+  width: calc(100% + 30px);
+  margin-left: -30px;
+}
+ul {
+  list-style: none;
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: 600;
+  padding-top: 50px;
+  color: white;
+}
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+li {
+  margin-bottom: 10px;
+}
+li:hover {
+  color: #c4c4c4;
+  animation-name: agrandar3;
+  animation-duration: 1s;
+  transform: scale(1.05) translateX(3%);
+}
+#TiendaZara {
+  width: 100%;
+  height: 100%;
+}
+.imagen-Zara:hover #TiendaZara {
+  animation-name: agrandar;
+  animation-duration: 2s;
+  transform: scale(1.05);
+}
+.imagen-Zara {
+  background-image: url("/imagenes/Zara2.jpg");
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+header {
+  padding-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white;
+}
+main {
+  padding-top: 10px;
+  width: 100%;
+}
+main p {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 40px;
+  text-align: center;
+}
+footer {
+  padding-top: 50px;
+  height: 200px;
+  width: 100%;
+}
+footer p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#facebook {
+  width: 30px;
+}
+#instagram {
+  width: 33px;
+  margin-top: -2px;
+}
+#twitter {
+  margin-top: -6px;
+  width: 42px;
+}
+#facebook:hover, #twitter:hover, #instagram:hover {
+  animation-name: agrandar2;
+  animation-duration: 1s;
+  transform: scale(1.2);
+}
+@media (max-width: 800px) {
+  #sucursales-container {
+    display: none;
+  }
+  ul {
+    font-size: 14px;
+  }
+  #TiendaZara {
+    opacity: 0%;
+  }
+  footer {
+    background-color: #292929;
+  }
+  .imagen-Zara {
+    min-width: 1px;
+    max-width: 800px;
+  }
+}
+@media (min-width: 801px) {
+  ul {
+    font-size: 17px;
+  }
+  #TiendaZara {
+    opacity: 100%;
+  }
+  footer {
+    background-color: black;
+  }
+  .imagen-Zara {
+    width: 80%;
+  }
+  #sucursales-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #sucursales-container:hover {
+    opacity: 90%;
+  }
+  #sucursales {
+    text-align: center;
+    color: white;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    text-shadow: 0px 0px 10px white;
+  }
+  .imagen-Zara:hover #sucursales-container {
+    cursor: pointer;
+    animation-name: subir;
+    animation-duration: 2s;
+    transform: translateY(-50px);
+  }
+}

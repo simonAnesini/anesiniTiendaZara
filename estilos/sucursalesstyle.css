@@ -1,0 +1,193 @@
+@keyframes agrandar2 {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.2);}
+}
+@keyframes agrandar3 {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.05) translateX(3%);}
+}
+@keyframes aside {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0%);}
+}
+@keyframes producto{
+  0% {transform: scale(1); box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);}
+  100% {transform: scale(1.05); box-shadow: 0px 5px 20px rgba(0, 0, 0, 1);}
+}
+html {
+  height: 100%;
+  width: 100%;
+  border-style: none;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: top;
+  z-index: 1;
+  box-shadow: 0px 10px 25px -10px rgba(0,0,0,0.6);
+}
+
+.playfair-display- <playfair-display-> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.Zara {
+  z-index: -1;
+  margin-left: -55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#logoZara {
+  width: 120px;
+}
+#hamburguesa {
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 40px;
+  height: 40px;
+}
+#x {
+  width: 30px;
+  height: 30px;
+}
+#x:hover {
+  opacity: 80%;
+}
+aside {
+  padding-left: 20px;
+  padding-top: 90px;
+  margin-top: -70px;
+  background-color: black;
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+aside:target {
+  animation-name: aside;
+  animation-duration: 0.1s;
+  transform: translateX(0%);
+  box-shadow: 10px 0px 25px -5px rgba(0,0,0,1);
+}
+hr {
+  margin-bottom: 15px;
+  background-color: white;
+  width: calc(100% + 30px);
+  margin-left: -30px;
+}
+ul {
+  list-style: none;
+  font-family: 'Anek Devanagari', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  padding-top: 50px;
+  color: white;
+}
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+li {
+  margin-bottom: 10px;
+}
+li:hover {
+  color: #c4c4c4;
+  animation-name: agrandar3;
+  animation-duration: 1s;
+  transform: scale(1.05) translateX(3%);
+}
+header {
+  padding-top: 70px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-decoration: overline;
+  color: black;
+  font-family: serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 70px;
+  text-align: center;
+}
+main {
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  border-style: solid;
+  border-color: black;
+  border-width: 9px;
+  border-radius: 25px;
+  width: 85%;
+  height: 450px;
+}
+footer {
+  padding-top: 50px;
+  height: 200px;
+  width: 100%;
+}
+footer p {
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 17px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+#icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#facebook {
+  width: 30px;
+}
+#instagram {
+  width: 33px;
+  margin-top: -2px;
+}
+#twitter {
+  margin-top: -6px;
+  width: 42px;
+}
+#facebook:hover, #twitter:hover, #instagram:hover {
+  animation-name: agrandar2;
+  animation-duration: 1s;
+  transform: scale(1.2);
+}
+@media (max-width: 800px) {
+  footer {
+    background-color: #292929;
+  }
+  ul {
+    font-size: 14px;
+  }
+}
+@media (min-width: 801px) {
+  ul {
+    font-size: 17px;
+  }
+  footer {
+    background-color: black;
+  }
+}
